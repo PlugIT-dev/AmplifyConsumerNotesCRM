@@ -30,7 +30,7 @@ ZOHO.embeddedApp.on("PageLoad", (entity) => {
     ZOHO.CRM.UI.Resize({ height: "480px", width: "100%" })
     .then(function(data) {
         // Construct dynamic URL
-        var baseUrl = "https://amplify.plugpv.com/version-test/consumernotesembed?debug_mode=true";  // Your Bubble URL
+        var baseUrl = "https://amplify.plugpv.com/consumernotesembed?debug_mode=true";  // Your Bubble URL
         var dynamicUrl = baseUrl + "&type=job" + "&rec=" + moduleID + "&zohouserid=" + userId;
         //alert(dynamicUrl);
         console.log("Dynamic URL: " + dynamicUrl);
@@ -46,6 +46,7 @@ ZOHO.embeddedApp.init();
 }
 
 on_load();
+
 
 
 
