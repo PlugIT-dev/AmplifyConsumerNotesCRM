@@ -31,7 +31,7 @@ ZOHO.embeddedApp.on("PageLoad", (entity) => {
     .then(function(data) {
         // Construct dynamic URL
         var baseUrl = "https://amplify.plugpv.com/consumernotesembed?debug_mode=true";  // Your Bubble URL
-        var dynamicUrl = baseUrl + "&type=job" + "&rec=job&zohouserid=" + userId;
+        var dynamicUrl = baseUrl + "&type=job" + "&rec=" + moduleID + "&zohouserid=" + userId;
         //alert(dynamicUrl);
         console.log("Dynamic URL: " + dynamicUrl);
         document.getElementById("zoho-iframe").src = dynamicUrl;
@@ -46,6 +46,7 @@ ZOHO.embeddedApp.init();
 }
 
 on_load();
+
 
 
 
